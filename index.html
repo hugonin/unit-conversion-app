@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Unit Conversion App</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="container-main">
+            <h1 class="container-main-heading">Metric / Imperial Unit Conversion</h1>
+            <div class="container-main-input">
+                <input id="num-convert" class="number-to-convert" type="text">
+                <button id="btn-convert" class="btn">Convert</button>
+            </div>
+           
+        </div>
+
+        <div class="container-cards">
+            <div class="card-length">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length-result" class="result" ></p>
+            </div>
+            <div class="card-volume">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="volume-result" class="result"></p>
+            </div>
+            <div class="card-mass">
+                <h3>Mass (Kilograms/Pound)</h3>
+                <p id="mass-result" class="result"></p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p class="footer-fineprint">&copy; <span id="year"> </span> | Made with <span aria-label="love"
+                role="image">&#128150;</span> by
+            Hugonin</p>
+    </footer> 
     <!-- Script -->
     <script src="script.js"></script>
 </body>
